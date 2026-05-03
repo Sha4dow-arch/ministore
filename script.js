@@ -1,11 +1,11 @@
 const products = [
-  { name: "RAM", price: 20, img: "image/RAM.jpg" },
-  { name: "CPU", price: 20, img: "image/CPU.jpg" },
-  { name: "Motherboard", price: 15, img: "image/Motherboard.jpg" },
-  { name: "PSU", price: 50, img: "image/psu.png" },
-  { name: "Monitor", price: 35, img: "image/Monitor-1.webp" },
-  { name: "Keyboard", price: 30, img: "image/Keyboard.jpg" },
-  { name: "Mouse", price: 100, img: "image/Mouse.jpg" },
+  { name: "RAM", price: 2000, img: "image/RAM.jpg" },
+  { name: "CPU", price: 20000, img: "image/CPU.jpg" },
+  { name: "Motherboard", price: 1500, img: "image/Motherboard.jpg" },
+  { name: "PSU", price: 5000, img: "image/psu.png" },
+  { name: "Monitor", price: 3500, img: "image/Monitor-1.webp" },
+  { name: "Keyboard", price: 3000, img: "image/Keyboard.jpg" },
+  { name: "Mouse", price: 1200, img: "image/Mouse.jpg" },
   { name: "Headphones", price: 25, img: "image/Headphones.jpg" },
   { name: "Webcam", price: 20, img: "image/Webcam.png" }
 ];
