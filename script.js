@@ -6,8 +6,8 @@ const products = [
   { name: "Monitor", price: 3500, img: "image/Monitor-1.webp" },
   { name: "Keyboard", price: 3000, img: "image/Keyboard.jpg" },
   { name: "Mouse", price: 1200, img: "image/Mouse.jpg" },
-  { name: "Headphones", price: 25, img: "image/Headphones.jpg" },
-  { name: "Webcam", price: 20, img: "image/Webcam.png" }
+  { name: "Headphones", price: 2005, img: "image/Headphones.jpg" },
+  { name: "Webcam", price: 2000, img: "image/Webcam.png" }
 ];
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
