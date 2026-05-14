@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+nav {
+    background-color: #313e4d;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+h1 {
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+h2 {
+    color: #007BFF;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+li {
+    margin-bottom: 10px;
+}
