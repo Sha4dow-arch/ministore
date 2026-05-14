@@ -1,47 +1,195 @@
-*{
+/* Global reset and font settings */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
+
+/* Page background and centered container */
 body {
     background-color: #f4f4f4;
     color: #333;
     padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
+
+/* Smooth scrolling when clicking nav links */
 html {
     scroll-behavior: smooth;
 }
+
+/* Navbar container styling */
 nav {
     background-color: #8ab5ea;
     padding: 10px;
     margin-bottom: 20px;
+    animation: slideDown 0.6s ease-out forwards;
 }
+
+/* Navbar list layout */
 nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
+
+/* Navbar item spacing */
 nav ul li {
     margin: 0 15px;
 }
+
+/* Navbar links appearance */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Navbar hover effect */
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+/* Section entrance animation */
+section {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Staggered delays for each section */
+section:nth-of-type(1) {
+    animation-delay: 0.2s;
+}
+section:nth-of-type(2) {
+    animation-delay: 0.35s;
+}
+section:nth-of-type(3) {
+    animation-delay: 0.5s;
+}
+section:nth-of-type(4) {
+    animation-delay: 0.65s;
+}
+
+/* Main page heading */
 h1 {
     color: #007BFF;
     margin-bottom: 20px;
 }
+
+/* Section headings */
 h2 {
     color: #007BFF;
     margin-top: 20px;
     margin-bottom: 10px;
 }
+
+/* Paragraph spacing */
 p {
     margin-bottom: 15px;
     line-height: 1.6;
 }
+
+/* Default list styling */
 ul {
     list-style-type: square;
     margin-left: 20px;
 }
+
+/* List item spacing */
 li {
     margin-bottom: 10px;
 }
+
+/* Images scale responsively */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Responsive rules for mobile screens */
+/* Responsive rules for medium screens up to 1280px */
+@media (max-width: 1280px) {
+    body {
+        padding: 18px;
+    }
+    nav ul {
+        gap: 8px;
+    }
+    nav ul li {
+        margin: 0 12px;
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    nav {
+        padding: 12px 8px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    nav ul li {
+        margin: 0;
+        width: 100%;
+    }
+    nav ul li a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+    section {
+        padding: 0 10px;
+    }
+    h1 {
+        font-size: 1.9rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    ul {
+        margin-left: 15px;
+    }
+}
+
+/* Navbar entrance animation keyframes */
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Section fade-in and upward movement */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
