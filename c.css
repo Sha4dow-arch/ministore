@@ -9,10 +9,21 @@ body {
     color: #333;
     padding: 20px;
 }
+html {
+    scroll-behavior: smooth;
+}
 nav {
-    background-color: #313e4d;
+    background-color: #8ab5ea;
     padding: 10px;
     margin-bottom: 20px;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
 }
 h1 {
     color: #007BFF;
