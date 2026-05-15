@@ -3,51 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Carl Reed | Portfolio</title>
     <link rel="stylesheet" href="c.css">
 </head>
 <body>
-    <!-- Navigation links to section IDs -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <header class="site-header">
+        <div class="brand">
+            <span class="logo">CR</span>
+            <div>
+                <p class="eyebrow">Personal Portfolio</p>
+                <h1>Carl Reed</h1>
+            </div>
+        </div>
 
-    <!-- Home section with welcome text and optional image -->
-    <section id="home">
-        <h1>Welcome to My Personal Portfolio</h1>
-        <p>This is a brief introduction about myself and my work.</p>
-        <img src="" alt="">
-    </section>
+        <nav class="site-nav">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <!-- About section describing your skills and background -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a passionate developer with experience in web development, data analysis, and machine learning. I enjoy creating innovative solutions to complex problems and continuously learning new technologies.</p>
-    </section>
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-copy">
+                <p class="eyebrow">Hi there, I’m Carl Joshua Palacios</p>
+                <h2>Product-focused developer &amp; creative technologist</h2>
+                <p>I build elegant web experiences, data-driven tools, and intelligent products that help teams move faster and grow with confidence.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="button primary">View Work</a>
+                    <a href="#contact" class="button secondary">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <div class="profile-image"><img src="image/new.jpg" alt="Carl Joshua Palacios"></div><br>
+                <div class="profile-details">
+                    <p class="section-label">Featured Skills</p>
+                    <ul>
+                        <li>Web Applications</li>
+                        <li>UI/UX Design</li>
+                        <li>Data Visualization</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <!-- Projects section with a list of portfolio work -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="#project-a">Project A:</a> A web application that helps users track their fitness goals.</li>
-            <li><a href="#project-b">Project B:</a> A data analysis tool that provides insights into social media trends.</li>
-            <li><a href="#project-c">Project C:</a> A machine learning model that predicts housing prices based on various features.</li>
-        </ul>
-    </section>
+        <section id="about" class="section-panel">
+            <div class="section-header">
+                <p class="section-label">About Me</p>
+                <h2>Turning ideas into polished digital experiences.</h2>
+            </div>
+            <div class="content-grid">
+                <div>
+                    <p>I am a versatile developer with a background in modern web development, data analysis, and product design. I thrive on solving complex problems with clean, thoughtful code and intuitive interactions.</p>
+                    <p>My work blends performance, clarity, and creativity to create experiences that feel professional, accessible, and memorable.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Core strengths</h3>
+                    <ul>
+                        <li>Responsive web design</li>
+                        <li>JavaScript, HTML, CSS</li>
+                        <li>Project strategy &amp; iteration</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <!-- Contact section with email and phone information -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out to me at:</p>
-        <ul>
-            <li>Email: <a href="mailto:carl@gmail.com">carl@gmail.com</a></li>
-            <li>Number: <a href="tel:+1234567890">+1 (234) 567-890</a></li>
-        </ul>
-    </section>
+        <section id="projects" class="section-panel">
+            <div class="section-header">
+                <p class="section-label">Featured Projects</p>
+                <h2>Selected work that demonstrates impact.</h2>
+            </div>
+            <div class="project-grid">
+                <article class="project-card">
+                    <span class="project-tag">Web App</span>
+                    <h3>FitTrack</h3>
+                    <p>A clean dashboard experience for tracking health goals, visualizing progress, and staying motivated with actionable insights.</p>
+                </article>
+                <article class="project-card">
+                    <span class="project-tag">Analytics</span>
+                    <h3>Social Pulse</h3>
+                    <p>Data-driven reporting tool that surfaces audience behavior and content trends for smarter marketing decisions.</p>
+                </article>
+                <article class="project-card">
+                    <span class="project-tag">Machine Learning</span>
+                    <h3>PricePredict</h3>
+                    <p>A predictive model that estimates housing prices from market indicators, delivering an intuitive interface for business users.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="section-panel">
+            <div class="section-header">
+                <p class="section-label">Skill Set</p>
+                <h2>Tools and technologies I work with daily.</h2>
+            </div>
+            <div class="skills-list">
+                <span>HTML &amp; CSS</span>
+                <span>JavaScript / TypeScript</span>
+                <span>React / Next.js</span>
+                <span>Figma / UI Design</span>
+                <span>Data Analysis</span>
+                <span>Responsive Layouts</span>
+            </div>
+        </section>
+
+        <section id="contact" class="section-panel contact-panel">
+            <div class="section-header">
+                <p class="section-label">Contact</p>
+                <h2>Let's build something great together.</h2>
+            </div>
+            <div class="contact-grid">
+                <div>
+                    <p>Whether you have a new project, collaboration opportunity, or simply want to say hello, I’m always happy to connect.</p>
+                </div>
+                <div class="contact-card">
+                    <p><strong>Email</strong></p>
+                    <a href="mailto:carl@gmail.com">carl@gmail.com</a>
+                    <p><strong>Phone</strong></p>
+                    <a href="tel:+639123456789">+63 912 345 6789</a>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
