@@ -30,6 +30,48 @@ body {
     padding: 24px;
 }
 
+body * {
+    opacity: 0;
+    transform: translateY(18px);
+    animation: fadeInUp 0.75s ease forwards;
+}
+
+.site-header {
+    animation-delay: 0s;
+}
+
+.site-nav a {
+    animation-delay: 0.1s;
+}
+
+.hero-copy .eyebrow {
+    animation-delay: 0.15s;
+}
+
+.hero-copy h2 {
+    animation-delay: 0.2s;
+}
+
+.hero-copy p {
+    animation-delay: 0.25s;
+}
+
+.hero-actions .button {
+    animation-delay: 0.28s;
+}
+
+.hero-card,
+.profile-image,
+.profile-details,
+.section-panel,
+.section-header,
+.content-grid > *,
+.project-card,
+.skills-list span,
+.contact-card {
+    animation-delay: 0.3s;
+}
+
 img {
     max-width: 100%;
     display: block;
@@ -364,6 +406,17 @@ main {
         height: 180px;
         border-radius: 28px;
         font-size: 2.5rem;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
